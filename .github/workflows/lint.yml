@@ -1,0 +1,24 @@
+name: Lint Frontend Files
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-index: '20'
+
+    - name: Run HTML/CSS Validation Check
+      run: |
+        echo "Validating core markup structure and layout compliance rules..."

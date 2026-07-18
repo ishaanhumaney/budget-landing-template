@@ -1,0 +1,11 @@
+# OS Metadata Files
+.DS_Store
+Thumbs.db
+
+# Developer Environment Staging
+.vscode/
+.idea/
+
+# Asset Backups
+*.bak
+*.tmp
